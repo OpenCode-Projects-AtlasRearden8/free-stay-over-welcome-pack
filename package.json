@@ -1,0 +1,21 @@
+{
+  "name": "free-stay-over-welcome-pack",
+  "version": "1.0.0",
+  "description": "Free printables for hosting guests kindly: eight warm, ready-to-print sheets that build to unbranded PDFs with one script.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "printables",
+    "hospitality",
+    "guest",
+    "pdf",
+    "host"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

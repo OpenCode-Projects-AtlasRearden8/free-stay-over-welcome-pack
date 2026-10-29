@@ -1,0 +1,217 @@
+/* Shared print styles for the stay-over welcome pack.
+   Every sheet prints on plain US Letter paper with no headers or footers. */
+
+@page {
+  size: letter;
+  margin: 0.55in;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4a3527;
+  font-size: 10.5pt;
+  line-height: 1.5;
+}
+
+/* ---------- headings & structure ---------- */
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21pt;
+  line-height: 1.2;
+  color: #b45832;
+  margin: 0;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13pt;
+  color: #8a5a3b;
+  margin: 12pt 0 6pt;
+}
+
+.kicker {
+  font-size: 8.5pt;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #b45832;
+  margin: 0 0 4pt;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #7d6248;
+  margin: 4pt 0 0;
+}
+
+.section {
+  margin-top: 10pt;
+  break-inside: avoid;
+}
+
+.foot {
+  margin-top: 12pt;
+  font-style: italic;
+  color: #7d6248;
+  font-size: 9.5pt;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ---------- write-in blanks ---------- */
+
+.blank {
+  display: inline-block;
+  height: 11pt;
+  vertical-align: bottom;
+  border-bottom: 1.4pt dotted #a98d6d;
+}
+
+.w10 { width: 10%; }
+.w15 { width: 15%; }
+.w20 { width: 20%; }
+.w25 { width: 25%; }
+.w30 { width: 30%; }
+.w40 { width: 40%; }
+.w50 { width: 50%; }
+.w60 { width: 60%; }
+.w75 { width: 75%; }
+.wfull { width: 100%; }
+
+.line {
+  display: block;
+  height: 22pt;
+  border-bottom: 1.4pt dotted #a98d6d;
+}
+
+.blank.grow {
+  flex: 1 1 20%;
+  align-self: flex-end;
+  margin-bottom: 3pt;
+}
+
+.writingline { margin: 8pt 0 2pt; }
+
+/* ---------- checklists ---------- */
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8pt;
+  padding: 6pt 0;
+  border-bottom: 1pt dotted #e3d3ba;
+}
+
+.box {
+  flex: none;
+  display: inline-block;
+  width: 10pt;
+  height: 10pt;
+  margin-top: 3pt;
+  border: 1.3pt solid #7a5c40;
+  border-radius: 2pt;
+}
+
+/* ---------- tables ---------- */
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tbl th {
+  text-align: left;
+  font-size: 8.5pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a5a3b;
+  border-bottom: 1.4pt solid #d3b48c;
+  padding: 4pt 6pt;
+}
+
+.tbl td {
+  height: 44pt;
+  padding: 4pt 6pt;
+  vertical-align: top;
+  border-bottom: 1.2pt dotted #d8c3a4;
+}
+
+.hint {
+  color: #a08665;
+  font-style: italic;
+  font-size: 8.5pt;
+}
+
+/* ---------- cut-out labels & cards ---------- */
+
+.label-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10pt;
+}
+
+.cutlab {
+  border: 1.3pt dashed #d3b48c;
+  border-radius: 6pt;
+  padding: 9pt 12pt;
+  break-inside: avoid;
+  min-height: 104pt;
+}
+
+.label-grid {
+  align-content: start;
+}
+
+.cutlab h2 {
+  margin: 0;
+  font-size: 12pt;
+}
+
+.panelgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.panelgrid .panel {
+  padding: 0 14pt;
+  padding-left: 0;
+  min-height: 640pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panelgrid .panel + .panel {
+  border-left: 1.4pt dashed #cf9d74;
+  padding-left: 14pt;
+}
+
+.panel .caption {
+  margin-top: 10pt;
+  text-align: center;
+  font-size: 8.5pt;
+  color: #7d6248;
+}
+
+.bigborder {
+  border: 2pt solid #e6d2b8;
+  border-radius: 8pt;
+  padding: 14pt 18pt;
+}
